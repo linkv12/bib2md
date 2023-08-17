@@ -64,6 +64,25 @@ def split_inproceeding_dict(di:dict) :
 
     return mandatory_, optional_
 
+def split_book_dict(di:dict) :
+    book_mandatory_key = ["author", "year", "title", "publisher"]
+    book_optional_key  = ["country", "city"]
+
+    mandatory_ = {}
+    for m_key in book_mandatory_key :
+        try :
+            m_val = di[m_key]
+            mandatory_[m_key] = m_val
+        except KeyError as ke :
+            print(di['title'], "is missing mandatory key %s" % (ke))
+    
+    optional_ = {}
+    for o_key in book_optional_key :
+        o_val = di.get(o_key, None)
+        if o_val != None :
+            optional_[o_key] = o_val
+
+    return mandatory_, optional_
 
 def _name_abrv(name:str) :
     special_word = ['de']
