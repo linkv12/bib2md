@@ -51,7 +51,7 @@ if __name__ == "__main__" :
     inproceding_info = {'author' : "Gurinder Singh and Bhawna Kumar and Loveleen Gaur and Akriti Tyagi",
                         'journal': "2019 International Conference on Automation, Computational and Technology Management (ICACTM)",
                         'page'   : "593-596",
-                        'title'  : "Comparison between multinomial and Bernoulli na\"\ive Bayes for text classification",
+                        'title'  : "Comparison between multinomial and Bernoulli naive Bayes for text classification",
                         'year'   : 2019}
     
     # pprint(inproceding_info)
