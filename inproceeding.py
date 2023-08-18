@@ -44,21 +44,21 @@ class Inproceeding:
         return self.__str__()
 
 
-if __name__ == "__main__" :
-    #    An article in a conference proceedings.
-    # Required fields: author, title, booktitle, year
-    # Optional fields: editor, volume/number, series, pages, address, month, organization, publisher, note, key
-    inproceding_info = {'author' : "Gurinder Singh and Bhawna Kumar and Loveleen Gaur and Akriti Tyagi",
-                        'journal': "2019 International Conference on Automation, Computational and Technology Management (ICACTM)",
-                        'page'   : "593-596",
-                        'title'  : "Comparison between multinomial and Bernoulli naive Bayes for text classification",
-                        'year'   : 2019}
+# if __name__ == "__main__" :
+#     #    An article in a conference proceedings.
+#     # Required fields: author, title, booktitle, year
+#     # Optional fields: editor, volume/number, series, pages, address, month, organization, publisher, note, key
+#     inproceding_info = {'author' : "Gurinder Singh and Bhawna Kumar and Loveleen Gaur and Akriti Tyagi",
+#                         'journal': "2019 International Conference on Automation, Computational and Technology Management (ICACTM)",
+#                         'page'   : "593-596",
+#                         'title'  : "Comparison between multinomial and Bernoulli naive Bayes for text classification",
+#                         'year'   : 2019}
     
-    # pprint(inproceding_info)
-    m, o = reff_parser.split_inproceeding_dict(inproceding_info)
-    i = Inproceeding(id=1, mandatory_field=m, optional_field=o)
-    # pprint(i.ieee_md)
-    # print(i.ieee_md)
+#     # pprint(inproceding_info)
+#     m, o = reff_parser.split_inproceeding_dict(inproceding_info)
+#     i = Inproceeding(id=1, mandatory_field=m, optional_field=o)
+#     # pprint(i.ieee_md)
+#     # print(i.ieee_md)
 
-    print(reff_parser.author_formatter(inproceding_info['author']))
-    pprint(reff_parser.author_formatter("Ana Margarida de Jesus Cardoso Cachopo and others"))
+#     print(reff_parser.author_formatter(inproceding_info['author']))
+#     pprint(reff_parser.author_formatter("Ana Margarida de Jesus Cardoso Cachopo and others"))

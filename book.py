@@ -47,20 +47,20 @@ class Book:
         return self.__str__()
 
 
-if __name__ == "__main__" :
+# if __name__ == "__main__" :
 
-#    author = {Aurélien Géron},
-#    publisher = {" O'Reilly Media, Inc."},
-#    title = {Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow},
-#    year = {2017},
-    book_info = {'author'    : "Aurélien Géron",
-                 'publisher' : " O'Reilly Media, Inc.",
-                 'title'     : "Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow",
-                 'year'      : 2017}
+# #    author = {Aurélien Géron},
+# #    publisher = {" O'Reilly Media, Inc."},
+# #    title = {Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow},
+# #    year = {2017},
+#     book_info = {'author'    : "Aurélien Géron",
+#                  'publisher' : " O'Reilly Media, Inc.",
+#                  'title'     : "Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow",
+#                  'year'      : 2017}
     
-    pprint(book_info)
-    m, o = reff_parser.split_book_dict(book_info)
-    i = Book(id=1, mandatory_field=m, optional_field=o)
+#     pprint(book_info)
+#     m, o = reff_parser.split_book_dict(book_info)
+#     i = Book(id=1, mandatory_field=m, optional_field=o)
 
-    print(i.ieee_md)
+#     print(i.ieee_md)
 

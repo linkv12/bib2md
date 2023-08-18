@@ -15,8 +15,8 @@ def split_article_dict(di:dict) :
     @page   : str
     @url    : str
     """
-    art_mandatory_key = ["author", "year", "title", "journal", "volume"]
-    art_optional_key  = ["doi", "issn", "issue", "page", "url"]
+    art_mandatory_key = ["author", "year", "title", "journal"]
+    art_optional_key  = ["doi", "issn", "issue", "page", "url", "volume"]
 
     mandatory_ = {}
     for m_key in art_mandatory_key :

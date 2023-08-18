@@ -79,10 +79,10 @@ class BibParser :
         
         return entry
 
-if __name__ == "__main__" :
-    fName = "export.bib"
-    bP = BibParser(fName)
-    print("you have %s entry in bib file" % len(bP.parse()))
+# if __name__ == "__main__" :
+#     fName = "export.bib"
+#     bP = BibParser(fName)
+#     print("you have %s entry in bib file" % len(bP.parse()))
 
     # tex = '   author = {Bruce G Marcot and Anca M Hanea},'
     # # remove whitespace prefix
