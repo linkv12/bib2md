@@ -7,3 +7,4 @@ __pycache__/
 # input_file & output
 *.bib
 output.md
+output.txt
