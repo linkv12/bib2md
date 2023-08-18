@@ -5,7 +5,6 @@
 #       info -> {author: bla, year: 2017, publisher: O'Reilly Media Inc., title: book_title}
 
 import re
-from pprint import pprint
 class BibParser :
 
     def __init__(self, file_name:str) -> None:

@@ -4,7 +4,6 @@ from book import Book
 from bibparser import BibParser
 import reff_parser
 
-from pprint import pprint
 class Refference:
     def __init__(self, parsedBib:list) -> None:
         self.parsedBib = parsedBib
@@ -17,10 +16,8 @@ class Refference:
         entry = []
         entryAmount = len(self.parsedBib)
         for i in range(entryAmount) :
-            # print(self.parsedBib[i]['id'])
             id = self.parsedBib[i]['id']
             type = self.parsedBib[i]['type']
-            # pprint(self.parsedBib[i]['info'])
             match type :
                 case 'article' :
                     m,o = reff_parser.split_article_dict(self.parsedBib[i]['info'])

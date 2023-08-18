@@ -1,4 +1,3 @@
-from pprint import pprint
 import reff_parser
 
 class Article :
