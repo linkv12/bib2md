@@ -53,23 +53,3 @@ class Article :
     
     def __repr__(self) -> str:
         return self.__str__()
-           
-# if __name__ == "__main__" :
-#     article_info = {'author' : "Dyan Yuliana and Catur Supriyanto",
-#                     'journal' : "Jurnal KomTekInfo",
-#                     'doi'    : "10.29165/komtekinfo.v5i2",
-#                     'issn'   : "2502-8758",
-#                     'issue'  : 3,
-#                     'page'   : "92-116",
-#                     'title'  : "Klasifikasi Teks Pengaduan Masyarakat Dengan Menggunakan Algoritma Neural Network",
-#                     'volume' : 5,
-#                     'url'    : "https://doi.org/10.29165/komtekinfo.v5i2",
-#                     'year'   : 2019
-#                     }
-#     m, o = reff_parser.split_article_dict(article_info)
-#     # pprint(m)
-#     # pprint(o)
-
-#     a = Article(id=0, mandatory_field=m, optional_field=o)
-#     pprint(a.ieee_md)
-#     # a.set_optional_field(optional_field=o)

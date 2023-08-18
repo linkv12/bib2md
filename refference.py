@@ -64,14 +64,3 @@ class Refference:
         with open(fileName, mode='w', encoding='utf-8') as fileWriter :
             texts = self.print_md()
             fileWriter.write(texts)
-
-
-
-
-# if __name__ == "__main__" :
-#     fName = "export.bib"
-#     bP = BibParser(fName)
-
-#     ref = Refference(bP.parsedBib)
-#     print(ref.print_md())
-#     ref.output_md()
