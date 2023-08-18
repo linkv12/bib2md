@@ -9,6 +9,22 @@ Well this program is for you.
 
 ## Usecase
 You need to quickly format `.bib` file to IEEE standard in `.md` <br>
+Converting:
+```bib
+@article{Polus2021,
+   author = {Manhal Elias Polus and Thekra Abbas},
+   issue = {2},
+   journal = {Eastern-European Journal of Enterprise Technologies},
+   pages = {109},
+   title = {Development for performance of Porter Stemmer algorithm},
+   volume = {1},
+   year = {2021},
+}
+```
+Into :
+
+><a id="1">[1]</a> M. E. Polus and T. Abbas, "Development for performance of Porter Stemmer algorithm," Eastern-European Journal of Enterprise Technologies, vol. 1, no. 2, 2021.
+
 The program made considering `.bib` export from mendeley refference manager.<br>
 Only in `@book, @article `and` @inproceedings` is currently implemented
 
