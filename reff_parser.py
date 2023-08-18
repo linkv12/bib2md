@@ -6,7 +6,7 @@ def split_article_dict(di:dict) :
     @year    : int
     @title   : str
     @journal : str
-    @volume  : int
+    @volume  : str
 
     Optional Info :
     @doi    : str
