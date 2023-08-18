@@ -3,7 +3,6 @@ from inproceeding import Inproceeding
 from book import Book
 from bibparser import BibParser
 import reff_parser
-import codecs
 
 from pprint import pprint
 class Refference:
@@ -60,12 +59,12 @@ class Refference:
         return text        
     
     def output_ieee(self, fileName='output.txt'):
-        with codecs.open(fileName, mode='w', encoding='utf-8') as fileWriter :
+        with open(fileName, mode='w', encoding='utf-8') as fileWriter :
             texts = self.print_ieee()
             fileWriter.write(texts)
 
     def output_md(self, fileName='output.md'):
-        with codecs.open(fileName, mode='w', encoding='utf-8') as fileWriter :
+        with open(fileName, mode='w', encoding='utf-8') as fileWriter :
             texts = self.print_md()
             fileWriter.write(texts)
 
