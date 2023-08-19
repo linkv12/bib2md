@@ -1,4 +1,5 @@
 # bib2md
+[![Python]](https://www.python.org "Python")
 > **Note**\
 > The program given as is, no warranty given. \
 > You can use and modify this program freely.
@@ -40,3 +41,6 @@ python main.py
 ```
 
 Having different `.bib` filename you need to change it in `main.py` file
+
+
+[Python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&labelColor=FFD43B&logoColor=3776AB&logo=python
